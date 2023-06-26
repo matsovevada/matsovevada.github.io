@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # this should match the `pages` option in your adapter-static options
-          path: './prosess-service/build'
+          path: 'prosess-service/build'
 
   deploy:
     needs: build_site
