@@ -7,6 +7,9 @@ on:
 jobs:
   build_site:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./prosess-service
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,26 +21,22 @@ jobs:
       #     version: 8
 
       - name: Install Node.js
-        working-directory: ./prosess-service
         uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: npm
 
       - name: Install dependencies
-        working-directory: ./prosess-service
         run: npm install
 
       - name: build
         env:
           BASE_PATH: '/matsovevada.github.io'
-        working-directory: ./prosess-service
         run: |
           npm run build
           touch build/.nojekyll
 
       - name: Upload Artifacts
-        working-directory: ./prosess-service
         uses: actions/upload-pages-artifact@v1
         with:
           # this should match the `pages` option in your adapter-static options
