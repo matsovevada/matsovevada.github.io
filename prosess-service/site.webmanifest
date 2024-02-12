@@ -1,6 +1,8 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Prosess-service",
+    "short_name": "Prosess-service",
+    "start_url": ".",
+    "description": "A website for Prosess-service AS",
     "icons": [
         {
             "src": "./images/android-chrome-192x192.png",
