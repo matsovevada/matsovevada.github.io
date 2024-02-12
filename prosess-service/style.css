@@ -1,0 +1,248 @@
+body {
+    background-color: #1E417E;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #FFF;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-wrapper {
+    max-width: 860px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 100%;
+    margin: 0 20px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    padding: 0 40px;
+    height: 100%;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    background-color: aliceblue;
+}
+
+.nav-item a:active {
+    background-color: #FFF;
+}
+
+.nav-item p {
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    line-height: 125px;
+    font-size: 18px;
+    color: black;
+    width: max-content;
+}
+
+.nav-img {
+    height: 100%;
+}
+
+.main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-top {
+    max-width: 940px;
+    box-sizing: border-box;
+    padding: 30px 20px 30px 20px;
+}
+
+.main-image {
+    border: 1px solid #FFF;
+    border-radius: 10px;
+    height: 450px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-text {
+    margin: 40px 20px 10px 20px;
+    max-width: 900px;
+    color: #FFF;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.main-header {
+    display: none;
+    margin: 0;
+}
+
+.main-employee {
+    max-width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+@media (max-width: 864px) {
+    .main-employee {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .employee-item {
+        margin: 20px;
+    }
+}
+
+.employee-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 15px;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 12px;
+}
+
+.employee-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.employee-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-services {
+    margin: 0 20px 40px;
+    color: #FFF;
+}
+
+footer {
+    background-color: #FFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    max-width: 860px;
+    margin: 20px
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.socialicon {
+    width: 48px;
+    margin-right: 10px;
+}
+
+.tlf-link {
+    margin-bottom: 16px;
+}
+
+.dropbtn {
+    background-color: #FFF;
+    color: #000;
+    padding: 16px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: none;
+    right: 0;
+    margin: auto 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #cdcdcd;
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown {
+        display: inline-block;
+    }
+
+    .nav-container {
+        display: none;
+    }
+}
