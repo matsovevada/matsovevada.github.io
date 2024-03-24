@@ -184,8 +184,12 @@ footer {
     margin-right: 10px;
 }
 
-.tlf-link {
+.spacer {
     margin-bottom: 16px;
+}
+
+.spacer-sm {
+    margin-bottom: 2px;
 }
 
 .dropbtn {
